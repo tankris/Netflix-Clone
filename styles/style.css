@@ -1,0 +1,13 @@
+/* By using a container for the image,
+ we enable flexbox and align it to the absolute center of the page */
+.netflix-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+}
+
+/* Image property */
+.netflix-logo {
+  width: 12vw;
+}
