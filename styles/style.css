@@ -16,12 +16,54 @@ body {
   width: 12vw;
 }
 
-/* Hamburger menu related properties */
+/* Hamburger menu button related properties */
 .netflix-nav-btn {
   border: 0;
   background-color: transparent;
   font-size: 25px;
+}
+
+/* Properties related to the nav button (to open it) */
+.netflix-open-btn {
   position: fixed;
   top: 15px;
   left: 15px;
+}
+
+/* Properties related to the nav button (to close it) */
+.netflix-close-btn {
+  opacity: 0.4;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Hamburger menu transition properties */
+.netflix-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  transform: translateX(0);
+}
+
+.netlfix-nav.visible {
+  transform: translateX(0);
+}
+
+.netflix-nav-black {
+  background-color: rgb(34, 31, 31);
+  max-width: 25vw;
+  min-width: 20vw;
+  width: 60%;
+}
+
+.netflix-nav-red {
+  background-color: rgb(229, 9, 20);
+  width: 95%;
+}
+
+.netflix-nav-white {
+  background-color: #fff;
+  width: 95%;
 }
