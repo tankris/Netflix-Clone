@@ -49,10 +49,12 @@ body {
   top: 0px;
   left: 0px;
   height: 100vh;
-  transform: translateX(0);
+  transform: translateX(-100%);
+  transition: transform 0.4s;
 }
 
-.netflix-nav.visible {
+/* By default, the navigation menu is hidden and so we add this class in order to un-hide the navigation menu */
+.visible {
   transform: translateX(0);
 }
 
@@ -61,11 +63,18 @@ body {
   max-width: 25vw;
   min-width: 20vw;
   width: 60%;
+  transition-delay: 0.4s;
+}
+
+/* Black bar must be the first bar visible when opening the Navigation Menu */
+.netflix-nav-black.visible {
+  transition-delay: 0s;
 }
 
 .netflix-nav-red {
   background-color: rgb(229, 9, 20);
   width: 95%;
+  transition-delay: 0.2s;
 }
 
 .netflix-nav-white {
@@ -74,10 +83,15 @@ body {
   width: 95%;
 }
 
+/* White bar must be the last to enter when opening the Navigation Menu */
+.netflix-nav-white.visible {
+  transition-delay: 0.4s;
+}
+
 /* Styling the menu item list in the Navigation Menu */
 .netflix-list {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0;
 }
 
 .netflix-list li {
