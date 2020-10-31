@@ -1,3 +1,8 @@
+/* Changing the default box-sizing behaviour to now be of border-box */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -47,7 +52,7 @@ body {
   transform: translateX(0);
 }
 
-.netlfix-nav.visible {
+.netflix-nav.visible {
   transform: translateX(0);
 }
 
@@ -65,5 +70,28 @@ body {
 
 .netflix-nav-white {
   background-color: #fff;
+  padding: 40px;
   width: 95%;
+}
+
+/* Styling the menu item list in the Navigation Menu */
+.netflix-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.netflix-list li {
+  margin: 20px 0;
+}
+
+.netflix-list li a {
+  color: rgb(34, 31, 31);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.netflix-list ul {
+  list-style-type: none;
+  padding-left: 20px;
 }
